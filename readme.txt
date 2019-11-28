@@ -1,86 +1,87 @@
-1º:
-Criado uma estrutura que serve como tabela de palavras válidas.
-As palavras estão ligadas dinamicamente
+1Âº:
+Criado uma estrutura que serve como tabela de palavras vÃ¡lidas.
+As palavras estÃ£o ligadas dinamicamente
 
-2º:
-Alfabeto, que será utilizado quando o codigo verificar a palavra "num", para poder criar as variaveis que assim forem declaradas no txt
+2Âº:
+Alfabeto, que serÃ¡ utilizado quando o codigo verificar a palavra "num", para poder criar as variaveis que assim forem declaradas no txt
 
-3º:
+3Âº:
 Duas variaveis de controle global
-Uma para recolher o caracter invalido da variavel que está sendo criada devido a declaração inicial "num"
+Uma para recolher o caracter invalido da variavel que estÃ¡ sendo criada devido a declaraÃ§Ã£o inicial "num"
 Outra para dizer se a linguagem eh totalmente valida
 
-4º:
-Declaração de todas as funções que foram necessarias
+4Âº:
+DeclaraÃ§Ã£o de todas as funÃ§Ãµes que foram necessarias
 
-5º:
+5Âº:
 main
-Cria a cabeça da estrutura dinamica (tabela de palavras validas)
-Lê o table.txt que contem todas as palavras validas e armazena na tabela de palavras validas(estrutura dinamica)
-Valida a linguagem passando como informação para a função o topo da estrutura
+Cria a cabeÃ§a da estrutura dinamica (tabela de palavras validas)
+LÃª o table.txt que contem todas as palavras validas e armazena na tabela de palavras validas(estrutura dinamica)
+Valida a linguagem passando como informaÃ§Ã£o para a funÃ§Ã£o o topo da estrutura
 
-6º:
-função lerTable
+6Âº:
+funÃ§Ã£o lerTable
 Responsavel por ler as palavras validas do table.txt e inserir na estrutura dinamica
 
-7º:
+7Âº:
 inserirTable
 Responsavel por receber as palavras declaradas no teste.txt e inserir na tabela de palavras validas(table a estrutura dinamica)
-São as palavras que vem logo depois da palavra "num"
+SÃ£o as palavras que vem logo depois da palavra "num"
 
-8º:
+8Âº:
 imprimirTable
 Responsavel por imprimir a tabela de palavras validas, foi feito pra me ajudar a saber se a tabela estava certa ou nao
 
-9º:
+9Âº:
 compTable
-Responsavel por comparar as palavras encontradas no teste.txt com as palavras validas e retornar 1 ou 0, se for 1 eh pq a palavra comparada está na tabela de palavras validas, se 0 então não está na tabela de palavras validas... eh retornado para verificaToken
+Responsavel por comparar as palavras encontradas no teste.txt com as palavras validas e retornar 1 ou 0, se for 1 eh pq a palavra comparada estÃ¡ na tabela de palavras validas, se 0 entÃ£o nÃ£o estÃ¡ na tabela de palavras validas... eh retornado para verificaToken
 
-10º:
+10Âº:
 compAlfabeto
 Responsavel por comparar letra a letra da palavra declarada como variavel no teste.txt... sao as palavras que vem logo depois do "num"
-Caso nao tenha uma letra no alfabeto, retorna 0, caso contrario retorna 1 para a função verificaVariavel
+Caso nao tenha uma letra no alfabeto, retorna 0, caso contrario retorna 1 para a funÃ§Ã£o verificaVariavel
 
-11º:
+11Âº:
 validarLinguagem
-Responsavel por abrir o arquivo teste.txt e ler o que tem nele e passar o que foi lido de cada linha lida para a função limpaFrase
+Responsavel por abrir o arquivo teste.txt e ler o que tem nele e passar o que foi lido de cada linha lida para a funÃ§Ã£o limpaFrase
 Responsavel tbm de dizer se o teste.txt eh totalmente valido ou nao
+Professor, aqui Ã© necessÃ¡rio alterar o nome do arquivo fonte... de 1 para 2 ou de 2 para 1.
 
-12º:
+12Âº:
 limpaFrase
 Responsavel por tirar tokens das palavras validas que aparecem nas frases lidas
-No lugar delas é posto um espaço em forma de controle
-E logo depois retira esses espaços postos
-Responsavel por passar o resultado para a função cuidaAspas
+No lugar delas Ã© posto um espaÃ§o em forma de controle
+E logo depois retira esses espaÃ§os postos
+Responsavel por passar o resultado para a funÃ§Ã£o cuidaAspas
 
-13º:
+13Âº:
 cuidaAspas
-Resposavel por desconsiderar tudo que está entre aspas e passar um erro, caso nao tenha fechamento de aspas
-Ao fim, chama a função cuidaSpace
+Resposavel por desconsiderar tudo que estÃ¡ entre aspas e passar um erro, caso nao tenha fechamento de aspas
+Ao fim, chama a funÃ§Ã£o cuidaSpace
 
-14º:
+14Âº:
 cuidaSpace
-Redundante, mas eh uma função pra remover espaços
-Durante a programação, fui observando que alguns espaços a mais eram postos na frase... essa função resolve isso
-Ao fim, chama a função removeEstranho
+Redundante, mas eh uma funÃ§Ã£o pra remover espaÃ§os
+Durante a programaÃ§Ã£o, fui observando que alguns espaÃ§os a mais eram postos na frase... essa funÃ§Ã£o resolve isso
+Ao fim, chama a funÃ§Ã£o removeEstranho
 
-15º:
+15Âº:
 removeEstranho
-Responsável por remover algumas palavras formadas de espaço sem nenhuma palavra ou nada diferente de espaço
-Ao fim, chama a função verificaPalavra
+ResponsÃ¡vel por remover algumas palavras formadas de espaÃ§o sem nenhuma palavra ou nada diferente de espaÃ§o
+Ao fim, chama a funÃ§Ã£o verificaPalavra
 
-16º:
+16Âº:
 tokenizador
-Responsável por reconhecer na frase se a primeira palavra eh "num" e chamar a função verificaVariavel, enviando a frase inteira para essa função
-Além disso, é responsável de enviar as outras frases para a função verificaToken
+ResponsÃ¡vel por reconhecer na frase se a primeira palavra eh "num" e chamar a funÃ§Ã£o verificaVariavel, enviando a frase inteira para essa funÃ§Ã£o
+AlÃ©m disso, Ã© responsÃ¡vel de enviar as outras frases para a funÃ§Ã£o verificaToken
 
-17º:
+17Âº:
 verificaVariavel
-Resposável pela frase que contém a palavra "num"
-Através da função strtok, removo as importancias e trato os tokens formados
+ResposÃ¡vel pela frase que contÃ©m a palavra "num"
+AtravÃ©s da funÃ§Ã£o strtok, removo as importancias e trato os tokens formados
 Cada token eh uma nova variavel(palavra) a ser comparada com o alfabeto, pra saber se existe alguma letra que nao pertence ao nosso alfabeto. Caso a palavra corresponda ao alfabeto, essa palavra eh inserida na tabela de palavras validas.
 Caso alguma letra nao esteja no nosso alfabeto, retorna um erro para "validacao.txt"
 
-18º:
+18Âº:
 verificaToken
-Verifica as palavras enviadas pela função "tokenizador". As palavras recebidas são comparadas com a tabela de palavras validas, caso alguma palavra não esteja na nossa tabela de palavras validas, retorna um erro para "validacao.txt"
+Verifica as palavras enviadas pela funÃ§Ã£o "tokenizador". As palavras recebidas sÃ£o comparadas com a tabela de palavras validas, caso alguma palavra nÃ£o esteja na nossa tabela de palavras validas, retorna um erro para "validacao.txt"
