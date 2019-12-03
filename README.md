@@ -1,4 +1,4 @@
-# analisadorlex
+# analisador léxico C
 Trabalho faculdade
 
 1º:
