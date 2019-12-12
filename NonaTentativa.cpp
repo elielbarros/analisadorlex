@@ -90,19 +90,19 @@ int compTable(table *topo, char aux[]){
 //-----------------------------------------------------------------------------------------------------------------
 int compAlfabeto(char aux[]){
     int i,j,control=0;
-    for(i=0; i<strlen(aux) /*aux[i]!='\0'*/;i++){ //Faz percorrer a string enquanto nao chegar ao fim dela
+    for(i=0; i<strlen(aux); i++){ //Faz percorrer a string enquanto nao chegar ao fim dela
         for(j=0; alfabeto[j]!='\0';j++){ // faz percorrer o alfabeto enquanto nao chegar ao fim dele
             if(aux[i]==alfabeto[j]){ // faz comparar cada palavra da string com as palavras do alfabeto
                 control = 1; //variavel de controle, caso alguma palavra nao esteja no alfabeto
             }
         }
         if(control!=1){
-            caracterInvalido = aux[i]; //Se nao der certo retorne 0 de falso e ponha a letra na variavel global char
+            caracterInvalido = aux[i];
             return 0;
         }
-        control  = 0; //devolve zero para a variavel control
+        control  = 0;
     }
-    return 1; // aqui, caso control!=1 nao tenha sido verdade, retorna verdade pra função validar linguagem na parte if(compAlfabeto(tok)
+    return 1;
 
 }
 //-----------------------------------------------------------------------------------------------------------------
@@ -113,7 +113,7 @@ void validarLinguagem(table **topo){
 
     file = fopen("ArquivoFonte2.mln","r");
     valid = fopen("validacao.txt","w");
-    while(fscanf(file," %[^\n]s",&f_Lida)!=EOF){ // pega a primeira palavra até um espaço ou uma quebra de linha
+    while(fscanf(file," %[^\n]s",&f_Lida)!=EOF){
     limpaFrase(&(*topo),f_Lida);
     }
     if(aval){
@@ -277,7 +277,7 @@ void verificaToken(table **topo, char palavra[]){
 	FILE *valid;
 	valid = fopen("validacao.txt","aw");
 	if(compTable(*topo, palavra)){
-		fprintf(valid,"A seguinte palavra '%s' não foi reconhecida\n", palavra);
+		fprintf(valid,"A seguinte palavra '%s' nÃ£o foi reconhecida\n", palavra);
 		aval=0;
 	}
 }
