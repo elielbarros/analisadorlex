@@ -19,5 +19,9 @@ if resultado = 0
 }
 else
 {
+<<<<<<< HEAD
    print "O" + val + " NAO eh um numero primo" idai
 }
+=======
+
+>>>>>>> maria
