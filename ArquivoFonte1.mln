@@ -18,6 +18,3 @@ if resultado = 0
    print "O" + val + " eh um numero primo"
 }
 else
-{
-   print "O" + val + " NAO eh um numero primo"
-}
