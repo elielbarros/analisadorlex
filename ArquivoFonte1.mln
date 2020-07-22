@@ -18,6 +18,9 @@ if resultado = 0
    print "O" + val + " eh um numero primo"
 }
 else
+<<<<<<< HEAD
 {
    print "O" + val + " NAO eh um numero primo" idai
 }
+=======
+>>>>>>> 5bdba4ab672167546d8016d27fbe215e874bbf1e
