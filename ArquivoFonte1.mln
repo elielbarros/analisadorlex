@@ -19,5 +19,4 @@ if resultado = 0
 }
 else
 {
-   print "O" + val + " NAO eh um numero primo"
-}
+
